@@ -40,8 +40,8 @@ botaoAdicionar.addEventListener("click", function(event) {
 }
 
     var arr = [rendaTd]
-    var soma = arr.reduce(funcion(soma,i) {
-        return soma + i;
+    var soma = arr.reduce(funcion(soma,i){
+        return  + i;
     });
 
 
