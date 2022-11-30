@@ -34,17 +34,22 @@ botaoAdicionar.addEventListener("click", function(event) {
     form.reset()
 });
 
-    function ajustaRenda(renda){
-    let rendaConvertida = parseFloat(renda).toLocaleString('pt-br',{style: 'decimal',minimumFractionDigits:2})
-    return rendaConvertida
-}
-    function somarRendas(rendaForm)
-    var arr = [rendaTd]
-    var soma = arr.reduce(funcion(soma,i){
-        return  + i;
-    });
+   function saldo(rendaForm){
 
+    var saldoTotal = 0;
+    var rendas = document.querySelectorAll('.info-renda');
 
+    for(var 1 =0; i < rendas.length; i++){
+
+        var renda = parseFloat(rendas[i].textContent.replace('R$','').replace('.','').replace(',','.'));
+        saldoTotal += renda;
+    }
+    var mostraSaldo = document.querySelector('#saldo');
+    mostraSaldo.textContent = saldoTotal.toLocaleString('pt-BR' , {style:'currency', currency:'BRL'})
+
+    return saldoTotal;
+    
+   }
 
     
 
