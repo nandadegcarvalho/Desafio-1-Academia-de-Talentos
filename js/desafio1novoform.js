@@ -39,7 +39,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     var saldoTotal = 0;
     var rendas = document.querySelectorAll('.info-renda');
 
-    for(var 1 =0; i < rendas.length; i++){
+    for(var i = 0; i < rendas.length; i++){
 
         var renda = parseFloat(rendas[i].textContent.replace('R$','').replace('.','').replace(',','.'));
         saldoTotal += renda;
@@ -48,7 +48,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     mostraSaldo.textContent = saldoTotal.toLocaleString('pt-BR' , {style:'currency', currency:'BRL'})
 
     return saldoTotal;
-    
+
    }
 
     
