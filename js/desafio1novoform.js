@@ -38,7 +38,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     let rendaConvertida = parseFloat(renda).toLocaleString('pt-br',{style: 'decimal',minimumFractionDigits:2})
     return rendaConvertida
 }
-
+    function somarRendas(rendaForm)
     var arr = [rendaTd]
     var soma = arr.reduce(funcion(soma,i){
         return  + i;
