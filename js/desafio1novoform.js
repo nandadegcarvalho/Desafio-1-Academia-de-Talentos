@@ -30,7 +30,7 @@ botaoAdicionar.addEventListener("click", function(event) {
 
     tabela.appendChild(clienteTr);
 
-    saldo()
+    saldo() // só está somando as rendas que já astavam na planilha - corrigir
    
 
     form.reset()
