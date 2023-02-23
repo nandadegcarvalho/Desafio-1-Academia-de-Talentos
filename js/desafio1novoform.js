@@ -29,6 +29,8 @@ botaoAdicionar.addEventListener("click", function(event) {
     var tabela = document.querySelector("#tabela-clientes");
 
     tabela.appendChild(clienteTr);
+
+    saldo()
    
 
     form.reset()
